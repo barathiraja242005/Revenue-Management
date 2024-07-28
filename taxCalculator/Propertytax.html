@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Tax Calculator</title>
+    <link rel="stylesheet" href="/revenue-management/taxCalculator/Propertytax.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Property Tax Calculator</h1>
+        <form id="tax-form">
+            <label for="plinthArea">Plinth Area (sq ft):</label>
+            <input type="number" id="plinthArea" name="plinthArea" required>
+            
+            <label for="basicStreetRate">Basic Street Rate (₹ per sq ft):</label>
+            <input type="number" id="basicStreetRate" name="basicStreetRate" required>
+            
+            <button type="button" onclick="calculateTax()">Calculate Tax</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="/revenue-management/taxCalculator/Propertytax.js"></script>
+</body>
+</html>
